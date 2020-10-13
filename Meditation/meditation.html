@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="meditation.css">
+        <title>Meditation App</title>
+    </head>
+    <body>
+        <div class="container-fluid pt-4">
+            <div class="row bg-light">
+                <div class="col pt-5 pb-5">
+                    <button  class="btn btn-outline-secondary" onclick="selectSong('audio1','image1')">
+                        <audio id="audio1" src="./assets/audio/mixkit-spiritual-moment-525.mp3" audio="audio/mpeg"></audio>
+                        <img id="image1" src="./assets/icons/heart-fill.svg" alt="" width="32" height="32" title="Bootstrap" >
+                    </button>
+                    
+                </div>
+                <div class="col pt-5 pb-5">
+                    <button  class="btn btn-outline-secondary" onclick="selectSong('audio2','image2')">
+                        <audio id="audio2" src="./assets/audio/mixkit-song-of-kindness-524.mp3" audio="audio/mpeg"></audio>
+                        <img id="image2" src="./assets/icons/droplet-fill.svg" alt="" width="32" height="32" title="Bootstrap">
+                    </button>
+                </div>
+                <div class="col pt-5 pb-5">
+                    <button  class="btn btn-outline-secondary" onclick="selectSong('audio3','image3')">
+                        <audio id="audio3" src="./assets/audio/mixkit-staring-at-the-night-sky-168.mp3" audio="audio/mpeg"></audio>
+                        <img id="image3" src="./assets/icons/emoji-smile.svg" alt="" width="32" height="32" title="Bootstrap">
+                    </button>
+                </div>
+                <div class="col pt-5 pb-5">
+                    <button  class="btn btn-outline-secondary" onclick="selectSong('audio4','image4')">
+                        <audio id="audio4" src="./assets/audio/mixkit-valley-sunset-127 (1).mp3" audio="audio/mpeg"></audio>
+                        <img  id="image4" src="./assets/icons/sun.svg" alt="" width="32" height="32" title="Bootstrap">
+                    </button>
+                </div>
+                <div class="col pt-5 pb-5">
+                    <button  class="btn btn-outline-secondary" onclick="selectSong('audio5','image5')">
+                        <audio id="audio5" src="./assets/audio/mixkit-spirit-in-the-woods-139.mp3" audio="audio/mpeg"></audio>
+                        <img id="image5" src="./assets/icons/tree-fill.svg" alt="" width="32" height="32" title="Bootstrap">
+                    </button>
+                </div>
+                <div class="col pt-5 pb-5">
+                    <button class="btn btn-outline-secondary" onclick="selectSong('audio6','image6')">
+                        <audio id="audio6" src="./assets/audio/mixkit-sitting-under-the-trees-28.mp3" audio="audio/mpeg"></audio>
+                        <img id="image6" src="./assets/icons/music-note-beamed.svg" alt="" width="32" height="32" title="Bootstrap">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5 pt-5">
+            <div class="row">
+                <div class="col pt-5 pb-5">
+                    <button  class="timer" class="btn btn-outline-secondary" onclick="songDuration(5)" disabled><img src="./assets/icons/alarm.svg" alt="" width="32" height="32" title="Bootstrap">
+                    5 Minutes</div>
+                <div class="col pt-5 pb-5">
+                    <button class="timer" class="btn btn-outline-secondary" onclick="songDuration(10)" disabled><img src="./assets/icons/alarm.svg" alt="" width="32" height="32" title="Bootstrap">
+                10 Minutes</div>
+                <div class="col pt-5 pb-5">
+                    <button class="timer" class="btn btn-outline-secondary" onclick="songDuration(30)" disabled><img src="./assets/icons/alarm.svg" alt="" width="32" height="32" title="Bootstrap">
+               30 Minutes</div>
+            </div>
+        </div>
+        <script type="text/javascript" src="meditation.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>
